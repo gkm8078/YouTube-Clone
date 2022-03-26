@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* form css start */
+
+#myForm {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2 {
+  font-size: 35px;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#name,
+#number,
+#emailID,
+#password,
+#confirmPassword {
+  display: block;
+  margin: 25px auto;
+  height: 24px;
+  width: 75%;
+  border-radius: 6px;
+  padding-left: 10px;
+  background-color: white;
+}
+
+#signupSubmit {
+  width: 60%;
+  height: 40px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: red;
+  border: none;
+  border-radius: 35px;
+  border-radius: 9px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+/* form css ends */

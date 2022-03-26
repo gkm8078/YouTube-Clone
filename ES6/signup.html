@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./signup.css">
+
+</head>
+<body>
+    <!-- navbar codes start -->
+    <div id="navbar">
+        <div>
+            <img src="./youtube.png" alt="youtube logo" onclick="homePage()">
+        </div>
+
+        <div>
+            <input type="text" id="input">
+            <button onclick="searchVideos()">SEARCH</button>
+        </div>
+
+        <div>
+            <img src="./microphone.png" alt="microphone">
+        </div>
+
+        <div>
+            <img src="./camera1.png" alt="">
+            <img src="./collage.png" alt="">
+            <img src="./bell.png" alt="">
+        </div>
+
+        <div>
+            <h4>LOGIN</h4>
+        </div>
+    </div>
+
+    <div id="line"></div>
+    <!-- navbar codes ends -->
+
+
+    <div id="signup-form-div">
+
+        <form id="myForm">
+                <!--Write form input elements here-->
+
+                <h2>SIGNUP</h2>
+                
+                <input type="text" id="name" placeholder="enter your name">
+                <input type="number" id="number" placeholder="enter your mobile no.">
+                <input type="text" id="emailID" placeholder="enter your email ID">
+                <input type="password" id="password" placeholder="enter your password">
+                <input type="password" id="confirmPassword" placeholder="confirm your password">
+                <input type="submit" id="signupSubmit">
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+<script src="./signup.js"></script>
+
+
+<!-- logo click codes start -->
+
+<script>
+
+const homePage = () => {
+    window.location.href = "index.html"
+}
+
+</script>
+
+<!-- logo click codes start -->
+
+
+<!-- login click codes start -->
+
+<script>
+
+const login = () => {
+    window.location.href = "login.html"
+}
+
+</script>
+
+<!-- login click codes start -->

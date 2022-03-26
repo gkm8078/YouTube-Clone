@@ -1,0 +1,39 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* movies css starts */
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 88%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  height: 220px;
+  padding: 12px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.container img {
+  width: 100%;
+  height: 150px;
+}
+
+.container div {
+  margin-top: 5px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* movies css ends */

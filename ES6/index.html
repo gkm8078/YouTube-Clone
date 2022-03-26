@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./navbar.css">
+
+</head>
+<body>
+    <!-- navbar codes start -->
+    <div id="navbar">
+        <div>
+            <img src="./youtube.png" alt="youtube logo" onclick="homePage()">
+        </div>
+
+        <div>
+            <input type="text" id="input">
+            <button onclick="searchVideos()">SEARCH</button>
+        </div>
+
+        <div>
+            <img src="./microphone.png" alt="microphone">
+        </div>
+
+        <div>
+            <img src="./camera1.png" alt="">
+            <img src="./collage.png" alt="">
+            <img src="./bell.png" alt="">
+        </div>
+
+        <div>
+            <h4 onclick="login()">LOGIN</h4>
+        </div>
+    </div>
+
+    <div id="line"></div>
+    <!-- navbar codes ends -->
+
+    <!-- movies data codes start -->
+    <div id="movies"></div>
+    <!-- movies data codes start -->
+</body>
+</html>
+
+<script src="./index.js"></script>
+
+
+<!-- logo click codes start -->
+
+<script>
+
+const homePage = () => {
+    window.location.href = "index.html"
+}
+
+</script>
+
+<!-- logo click codes start -->
+
+
+<!-- login click codes start -->
+
+<script>
+
+const login = () => {
+    window.location.href = "login.html"
+}
+
+</script>
+
+<!-- login click codes start -->

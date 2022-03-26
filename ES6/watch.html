@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./navbar.css">
+
+    <style>
+
+        #video{
+            width: 90%;
+            height: 580px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        #video iframe{
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        #video h4{
+            margin-top: 20px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- navbar codes start -->
+    <div id="navbar">
+        <div>
+            <img src="./youtube.png" alt="youtube logo" onclick="homePage()">
+        </div>
+
+        <div>
+            <input type="text" id="input">
+            <button onclick="searchVideos()">SEARCH</button>
+        </div>
+
+        <div>
+            <img src="./microphone.png" alt="microphone">
+        </div>
+
+        <div>
+            <img src="./camera1.png" alt="">
+            <img src="./collage.png" alt="">
+            <img src="./bell.png" alt="">
+        </div>
+
+        <div>
+            <h4>LOGIN</h4>
+        </div>
+    </div>
+
+    <div id="line"></div>
+    <!-- navbar codes ends -->
+
+    <div id="video"></div>
+</body>
+</html>
+
+
+<!-- logo click codes start -->
+
+<script>
+
+const homePage = () => {
+    window.location.href = "index.html"
+}
+
+</script>
+
+<!-- logo click codes start -->
+
+
+
+
+<!-- appending codes start -->
+
+<script>
+
+let videoData = JSON.parse(localStorage.getItem("watchMovies"))
+
+console.log(videoData)
+
+let iframe = document.createElement("iframe")
+iframe.src = `https://www.youtube.com/embed/${videoData.id.videoId}`
+
+let name = document.createElement("h4")
+name.innerText = videoData.snippet.title
+
+
+document.querySelector("#video").append(iframe, name)
+
+</script>
+
+<!-- appending codes ends -->
